@@ -15,6 +15,9 @@ pip install pandas
 ```
 You'll need Python 3.6 at least.
 
+## Before code execution
+As the GitHub's file size limitation, the model is zipped as model_file_v2.zip. Please unzip the model file and place it together with the notebook file.
+
 ## Load the Test data
 Use Jupyter Notebook to open the provided notebook file (Evaluate_Model.ipynb).
 You need to modify the file path in the first cell of the notebook before executing the code.
