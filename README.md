@@ -7,7 +7,7 @@ This solution is built with [Surprise Python](http://surpriselib.com/) packages 
 ```
 pip install surprise
 ```
-You'll need Python 3.6 at least and [Microsoft Visual C++ 2015](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installed .
+You'll need Python 3.6 at least and [Microsoft Visual C++ 14.0](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) installed .
 
 ### Installation for Pandas Python via PyPI
 ```
