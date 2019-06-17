@@ -7,7 +7,7 @@ This solution is built with [Surprise Python](http://surpriselib.com/) packages 
 ```
 pip install surprise
 ```
-You'll need Python 3.6 at least and [Microsoft Visual C++ 14.0](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) installed .
+You'll need Python 3.6 at least and [Microsoft Visual C++ 14.0](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) installed. Please refer this [tutorial](https://www.scivision.dev/python-windows-visual-c-14-required/) to install the Microsoft Visual C++ 14.0.
 
 ### Installation for Pandas Python via PyPI
 ```
@@ -39,8 +39,12 @@ accuracy.rmse(prediction)
 ### Single prediction
 In order to predict the particular location with the specify time information, the following code will able to predict the demand by using the given information.
 ```
-uid = "qp0d45"
-iid = "47 8:45"
+geohash = "qp0d45" #string datatype
+day = 47 # integer datatype
+time = "8:45" # string datatype
+
+uid = geohash
+iid = str(day) + " " + time
 
 pred = model.predict(uid, iid)
 pred.est
